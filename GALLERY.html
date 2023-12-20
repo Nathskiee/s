@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gallery</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+<div id=wadahcontent>
+	<div id="header"></div>
+	<div id="navigasi">
+        <a href="index.html">HOME</a>
+        <a href="GALLERY.html">GALLERY</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="contactUs.html">CONTACT US</a>
+	<div id="date-time"></div>
+    <script>
+        function updateDateTime() {
+            var now = new Date();
+            var options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric',
+                timeZoneName: 'short'
+            };
+
+            var dateTimeString = now.toLocaleDateString('en-US', options);
+
+            document.getElementById('date-time').innerText = dateTimeString;
+        }
+
+        // Update date and time every second
+        setInterval(updateDateTime, 1000);
+
+        // Initial call to display date and time immediately
+        updateDateTime();
+    </script>
+</body>
+	</div>
+<div id="content">
+  <h1>GALLERY</h1>
+  <div id="container">
+<div class="gallery">
+  <a target="_blank" href="LEMON.PNG"><img src="LEMON.PNG" alt="Cinque Terre"></a><div class="desc">RRQ LEMON</div>
+  <a target="_blank" href="BANANA.PNG"><img src="BANANA.PNG" alt="Cinque Terre"></a><div class="desc">RRQ BANANA</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="CLAYY.PNG"> <img src="CLAYY.PNG" alt="Cinque Terre"></a><div class="desc">RRQ CLAYY</div>
+  <a target="_blank" href="FERXIC.PNG"><img src="FERXIC.PNG" alt="Cinque Terre"></a><div class="desc">RRQ FERXIC</div>
+</div>
+</div>
+	<div id="footer">
+		<p>&copy; Copyrigt 2023 - SULTHAN DIEN AHMAD [ NIM-231011701064]</p>
+	</div>
+</div>
+</body>
+</html>

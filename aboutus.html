@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us</title>
+  <link rel="stylesheet" type="text/css" href="style4.css">
+</head>
+<body>
+<div id=wadahcontent>
+  <div id="header"></div>
+  <div id="navigasi">
+      <a href="index.html">HOME</a>
+        <a href="GALLERY.html">GALLERY</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="contactUs.html">CONTACT US</a>
+   <div id="date-time"></div>
+
+    <script>
+        function updateDateTime() {
+            var now = new Date();
+            var options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric',
+                timeZoneName: 'short'
+            };
+
+            var dateTimeString = now.toLocaleDateString('en-US', options);
+
+            document.getElementById('date-time').innerText = dateTimeString;
+        }
+
+        // Update date and time every second
+        setInterval(updateDateTime, 1000);
+
+        // Initial call to display date and time immediately
+        updateDateTime();
+    </script>
+</body>
+  </div>
+        <!--java-->
+  <div id="content">
+        <h1> TENTANG KAMI</h1>
+    <img src="p.jpg" id="imgkanan">
+    <p text align="left">Tentang kami
+Menjadi organisasi E-sports terkemuka di Asia Tenggara, dengan membangun merek dan tim profesional yang terdiri dari individu-individu yang sangat bersemangat dan terampil yang ingin menunjukkan potensi mereka kepada dunia.</p>
+<br>
+<P>Didirikan pada bulan Oktober 2013, Rex Regum Qeon (RRQ) lahir dengan menggabungkan para pemain DotA terbaik Indonesia yang sudah terkenal di komunitas game internasional. Pada akhir tahun 2017, Rex Regum mulai berekspansi ke game lain seperti game FPS populer Point Blank dan kemudian ke game seluler yang sangat sukses Mobile Legends Bang Bang. Kini Team RRQ telah berkembang lebih dari 8 divisi game termasuk FREE FIRE, FIFA, APEX LEGENDS, PUBG dan PUBGM dengan merekrut beberapa talenta terbaik tidak hanya dari Indonesia tetapi juga regional.</p>
+</body>
+</div>
+<div id="footer">
+    <p>&copy; Copyrigt 2023 - SULTHAN DIEN AHMAD [ NIM-231011701064]</p>
+  </div>
+</div>
+</body>
+</html>

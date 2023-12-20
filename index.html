@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id=wadahcontent>
+	<div id="header"></div>
+	<div id="navigasi">
+	    <a href="index.html">HOME</a>
+        <a href="GALLERY.html">GALLERY</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="contactUs.html">CONTACT US</a>
+   <div id="date-time"></div>
+
+    <script>
+        function updateDateTime() {
+            var now = new Date();
+            var options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric',
+                timeZoneName: 'short'
+            };
+
+            var dateTimeString = now.toLocaleDateString('en-US', options);
+
+            document.getElementById('date-time').innerText = dateTimeString;
+        }
+
+        // Update date and time every second
+        setInterval(updateDateTime, 1000);
+
+        // Initial call to display date and time immediately
+        updateDateTime();
+    </script>
+</body>
+	</div>
+
+	<div id="content">
+		<h1>SEJARAH</h1>
+		<img src="rrq4.png">
+		<p>Rex Regum Qeon atau yang lebih dikenal dengan RRQ[1] merupakan klub e-sports asal Indonesia yang menaungi 6 divisi game, yaitu Mobile Legends: Bang Bang, PUBG Mobile, Free Fire, Valorant, dan Pokémon Unite. Didirikan sejak 2013, Rex Regum Qeon telah memenangkan lebih dari 200 turnamen esports nasional maupun internasional.</p>
+		<p>Nama Rex Regum berasal dari bahasa Latin yang berarti ‘raja dari segala raja’ atau ‘king of kings’,sedangkan Qeon merupakan nama in game Presiden Direktur Team RRQ, Riki K. Suliawan.</p>
+		<p>Siapa sih yang nggak kenal dengan Rex Regum Qeon atau team RRQ? Bagi kamu pencinta game pasti sudah sangat familiar dengan nama yang satu ini. Seperti yang diketahui, sejak tahun 2015 hingga 2020 banyak sekali bermunculan tim E-sports yang ada di Indonesia di mana salah satunya yaitu RRQ. RRQ sendiri merupakan salah satu klub E-sports asal negara Indonesia yang menaungi 6 divisi game. Saat ini RRQ sangat populer karena berhasil memenangkan hampir lebih dari 200 turnamen E-sports baik nasional maupun internasional. Nah, buat kamu yang hobi nge-game pasti penasaran dengan sejarah dan siapa saja anggota team dibalik kesuksesan dari RRQ itu sendiri. Untuk informasi lebih detail tentang team RRQ, simak penjelasan lengkapnya di sini.</p>
+		<h3>PENJELASAN MENGENAI TEAM RRQ</h3>
+		<p>Rex Regum Qeon atau lebih akrab dengan nama RRQ ini merupakan salah satu klub E-sports yang sangat populer di Indonesia. Di awal kemunculannya RRQ berusaha untuk mengikutsertakan playernya di berbagai turnamen baik skala regional, nasional hingga internasional. Dari turnamen-turnamen itulah, RRQ meraih segudang prestasi sehingga membuatnya semakin dikenal secara luas.</p>
+		<p>Sebagian besar dari kamu pastinya penasaran tentang arti dibalik nama RRQ. Nah, nama Rex Regum sendiri berasal dari bahasa latin yang bermakna ‘king of kings’ atau ‘raja dari segala raja’. Sementara untuk kata Qeon diambil dari nama in game Presiden Team RRQ yaitu Riki K. Sualiawan. Lalu, bagaimana sejarah singkat terbentuknya team RRQ ini?</p>
+		<p>Team yang sudah berdiri sejak tahun 2013 ini sudah berhasil menaungi 6 divisi game, diantaranya yaitu PUBG Mobile, Free Fire, Valorant, Mobile Legends: Bang Bang, Wild Rift, Sausage Man, dan FIFA. Dari beberapa divisi tersebut, salah satu yang banyak menyumbangkan prestasi bagi tim RRQ yaitu divisi Mobile Legends.</p>
+		<h3 align="center">VIDIO CUPLIKAN KONTEN RRQ</h3>
+		<center>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/HwR4a4BBA2I?si=BugeQ_kdApYblTl3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</center>
+	</div>
+	<div id="footer">
+		<p>&copy; Copyrigt 2023 - SULTHAN DIEN AHMAD [ NIM-231011701064]</p>
+	</div>
+	<div></div>
+</div>
+</body>
+</html>
